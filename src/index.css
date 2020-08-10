@@ -20,7 +20,7 @@ code {
 .nav {
   background: white;
   color: black;
-  width: 100vw;
+  width: 100%;
   height: 7rem;
   display: flex;
   justify-content: flex-end;
@@ -290,7 +290,7 @@ code {
   }
   .container {
     margin: 1rem 4rem 2rem 2rem;
-    max-width: 70%;
+    min-width: 100%;
   }
 }
 
@@ -322,6 +322,6 @@ ul li::before {
   .footer {
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 80%;
+    min-width: 100%;
   }
 }
