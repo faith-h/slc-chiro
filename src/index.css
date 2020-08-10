@@ -83,7 +83,7 @@ code {
     height: 2rem;
     width: 2rem;
     position: absolute;
-    right: 9rem;
+    right: 2rem;
     top: 2.25rem;
     color: var(--bg-primary);
   }
@@ -115,6 +115,7 @@ code {
 
 .home-bg {
   background: url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90') no-repeat center fixed;
+  min-width: 100%;
   background-position: cover;
   height: 40rem;
 }
@@ -163,7 +164,7 @@ code {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 0.85fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-item {
@@ -290,7 +291,7 @@ code {
   }
   .container {
     margin: 1rem 4rem 2rem 2rem;
-    min-width: 100%;
+    max-width: 100%;
   }
 }
 
