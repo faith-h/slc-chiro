@@ -1,13 +1,327 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --bg-primary: #6dcbd5;
+  --bg-secondary: #f8f8f8;
+}
+
+/*  Navbar styling */
+
+.nav {
+  background: white;
+  color: black;
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: height 300ms ease;
+  border-bottom: 2px solid var(--bg-secondary);
+}
+
+.logo {
+  height: 5rem;
+  position: absolute;
+  top: 1rem;
+  left: 6rem;
+  z-index: 3;
+}
+
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.nav-block {
+  margin-right: 5rem;
+  background: var(--bg-primary);
+  padding: 1rem;
+}
+
+.icon {
+  display: none;
+}
+
+/* underline on hover, found in nav and home page */
+
+@media screen and (min-width: 600px) {
+  .nav-link::after, .link-text::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--bg-primary);
+    transition: width .3s;
+  }
+  .nav-link:hover::after, .link-text:hover::after {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-link, .nav-block {
+    display: none;
+  }
+  .logo {
+    left: 2rem;
+  }
+  .icon {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    right: 9rem;
+    top: 2.25rem;
+    color: var(--bg-primary);
+  }
+  .link-text {
+    border-bottom: 3px solid var(--bg-primary);
+  }
+}
+
+/* navbar dropdown */
+
+@media screen and (max-width: 600px) {
+  .navresponsive {
+    background: white;
+    position: relative;
+    padding-top: 7rem;
+    height: 9.65rem;
+    transition: height 300ms ease;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .navresponsive a {
+    display: block;
+    background: whitesmoke;
+    padding: 1rem;
+  }
+}
+
+/* Home styling */
+
+.home-bg {
+  background: url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90') no-repeat center fixed;
+  background-position: cover;
+  height: 40rem;
+}
+
+.title {
+  border-left: 4px solid var(--bg-primary);
+  padding-left: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: white;
+  font-size: 4rem;
+  animation: fadeIn 2s ease;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  animation: fadeIn 3s ease;
+}
+
+.home-header {
+  font-size: 1.75rem;
+  color: var(--bg-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button {
+  background: var(--bg-primary);
+  border: 3px solid var(--bg-primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: 300ms ease;
+}
+
+.button:hover {
+  background: var(--bg-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.85fr));
+}
+
+.grid-item {
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+}
+
+.link-text {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* width below feels weird, must be a better way to center overlay */
+
+@media screen and (min-width: 700px) {
+  .overlay {
+    display: none;
+  }
+  .grid-item:hover .overlay {
+    display: block;
+    background: rgb(0, 0, 0, 0.5);
+    width: 93%;
+    height: 93%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn ease 500ms;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .overlay {
+    background: rgb(0, 0, 0, 0.5);
+    width: 93%;
+    height: 93%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    left: 40%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Shared styling */
+
+.header {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.page-header {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.underline {
+  float: left;
+  width: 14rem;
+  height: 3px;
+  background: var(--bg-primary);
+  border: none;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  margin: 1rem 5rem 2rem 6rem;
+}
+
+.text-block {
+  line-height: 2;
+}
+
+.column-text {
+  float: right;
+  width: 20%;
+  height: 27rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  overflow: hidden;
+  margin-right: 5rem;
+  position: relative;
+}
+
+/* for blue corner */
+
+.column-text:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -20px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  background-color: var(--bg-primary);
+}
+
+@media screen and (max-width: 600px) {
+  .column-text {
+    float: none;
+    width: 70%;
+    height: 100%;
+  }
+  .container {
+    margin: 1rem 4rem 2rem 2rem;
+    max-width: 70%;
+  }
+}
+
+/* Services styling */
+
+ul {
+  width: 60%;
+  list-style: none;
+  margin: 0;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--bg-primary);
+  margin-left: -0.5em;
+}
+
+/* Footer styling */
+
+.footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
 }
