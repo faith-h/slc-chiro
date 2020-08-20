@@ -84,7 +84,7 @@ code {
     width: 2rem;
     position: absolute;
     right: 2rem;
-    top: 2.25rem;
+    top: 2.5rem;
     color: var(--bg-primary);
   }
   .link-text {
@@ -93,13 +93,14 @@ code {
 }
 
 /* navbar dropdown */
+/* git commit - responsive navbar fix */
 
 @media screen and (max-width: 600px) {
   .navresponsive {
     background: white;
     position: relative;
     padding-top: 7rem;
-    height: 9.65rem;
+    height: 10rem;
     transition: height 300ms ease;
     z-index: 2;
     overflow: hidden;
@@ -108,6 +109,7 @@ code {
     display: block;
     background: whitesmoke;
     padding: 1rem;
+    /* padding-top: 0; */
   }
 }
 
@@ -325,4 +327,14 @@ ul li::before {
     flex-wrap: wrap;
     min-width: 100%;
   }
+}
+
+/* Contact styling */
+
+.con-link {
+  text-decoration: none;
+}
+
+.con-link:hover {
+  cursor: pointer;
 }
