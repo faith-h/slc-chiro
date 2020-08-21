@@ -1,5 +1,6 @@
 import React from 'react'
 import Map from './MapContainer'
+import ContactForm from './ContactForm'
 
 class Contact extends React.Component {
 
@@ -27,6 +28,7 @@ class Contact extends React.Component {
             <p> Monday - Friday: 7:30am - 6:30pm </p>
             <p> Saturdays: By appointment </p>
           </div>
+          <ContactForm />
         </div>
       </>
     )
