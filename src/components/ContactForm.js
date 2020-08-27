@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-// const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATEID
-// const USER_ID = process.env.REACT_APP_EMAILJS_USERID
-// const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICEID
+// need to style form
 
-// e-mail is working, need to style form and get env variables set up
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICEID
+const USER_ID = process.env.REACT_APP_EMAILJS_USERID
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATEID
 
 export default function CommentForm() {
   const [formData, setFormData] = useState({
@@ -22,8 +22,6 @@ export default function CommentForm() {
 
   function sendEmail(e) {
     e.preventDefault()
-    console.log(TEMPLATE_ID)
-
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
       .then((result) => {
           console.log(result)
@@ -32,7 +30,7 @@ export default function CommentForm() {
       })
   }
 
-  const { name, email, message } = formData;
+  const { name, email, message } = formData
   return (
     <form className="contact-form" onSubmit={sendEmail}>
       <label>Name</label>
@@ -43,5 +41,5 @@ export default function CommentForm() {
       <textarea value={message} type="text" name="message" onChange={e => updateFormData(e)} />
       <input type="submit" value="Send" />
     </form>
-  );
+  )
 }
