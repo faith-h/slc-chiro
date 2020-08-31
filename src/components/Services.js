@@ -4,9 +4,9 @@ const Services = () => (
   <>
     <div class='container'>
       <p class='page-header'> Why Choose Us </p>
-      <hr class='underline' /> <br />
+      <hr class='underline' style={{ width: '16rem' }} /> <br />
 
-      <div class='column-text' style={{ height: '33rem'}}>
+      <div class='column-text'>
         <p class='header'> Superior health and balance </p>
         <p class='text-block'>
           When it comes to your health, our office delivers a range of services designed to restore your body to balance.

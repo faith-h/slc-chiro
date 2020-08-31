@@ -18,10 +18,8 @@ code {
 /*  Navbar styling */
 
 .nav {
-  background: white;
-  color: black;
   width: 100%;
-  height: 7rem;
+  height: 6rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -30,11 +28,10 @@ code {
 }
 
 .logo {
-  height: 5rem;
+  height: 4rem;
   position: absolute;
   top: 1rem;
   left: 6rem;
-  z-index: 3;
 }
 
 .nav-link {
@@ -93,23 +90,21 @@ code {
 }
 
 /* navbar dropdown */
-/* git commit - responsive navbar fix */
 
 @media screen and (max-width: 600px) {
   .navresponsive {
     background: white;
     position: relative;
     padding-top: 7rem;
-    height: 10rem;
     transition: height 300ms ease;
-    z-index: 2;
     overflow: hidden;
+    z-index: 2;
+    height: 10rem;
   }
   .navresponsive a {
     display: block;
     background: whitesmoke;
     padding: 1rem;
-    /* padding-top: 0; */
   }
 }
 
@@ -117,9 +112,9 @@ code {
 
 .home-bg {
   background: url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90') no-repeat center fixed;
-  min-width: 100%;
+  min-width: 100vw;
   background-position: cover;
-  height: 40rem;
+  height: 43.5rem;
 }
 
 .title {
@@ -132,12 +127,10 @@ code {
   text-transform: uppercase;
   color: white;
   font-size: 4rem;
-  animation: fadeIn 2s ease;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  animation: fadeIn 3s ease;
+  font-size: 1.75rem;
 }
 
 .home-header {
@@ -179,8 +172,6 @@ code {
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -218,15 +209,6 @@ code {
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* Shared styling */
 
 .header {
@@ -236,14 +218,15 @@ code {
 }
 
 .page-header {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: 1px;
 }
 
 .underline {
   float: left;
-  width: 14rem;
+  width: 12rem;
   height: 3px;
   background: var(--bg-primary);
   border: none;
@@ -254,6 +237,7 @@ code {
 
 .container {
   margin: 1rem 5rem 2rem 6rem;
+  animation: fadeIn ease 500ms;
 }
 
 .text-block {
@@ -263,7 +247,7 @@ code {
 .column-text {
   float: right;
   width: 20%;
-  height: 27rem;
+  height: 100%;
   padding: 2rem;
   background: var(--bg-secondary);
   overflow: hidden;
@@ -288,8 +272,7 @@ code {
 @media screen and (max-width: 600px) {
   .column-text {
     float: none;
-    width: 70%;
-    height: 100%;
+    width: 91%;
   }
   .container {
     margin: 1rem 4rem 2rem 2rem;
@@ -325,7 +308,7 @@ ul li::before {
   .footer {
     justify-content: center;
     flex-wrap: wrap;
-    min-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -336,5 +319,54 @@ ul li::before {
 }
 
 .con-link:hover {
+  /* cursor: pointer; */
+  color: var(--bg-primary);
+  transition: 300ms ease;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0;
+  float: left;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+
+input, textarea {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  color: #999;
+  border: 1px solid #ddd;
+  padding: .5em;
+  width: 100%;
+}
+
+textarea {
+  height: 6rem;
+}
+
+input:focus, textarea:focus {
+  color: black;
+}
+
+.submit {
+  background: var(--bg-primary);
+  border: 3px solid var(--bg-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem 3rem 1rem 3rem;
+  margin-top: 1.25rem;
+  transition: 300ms ease;
+}
+
+.submit:hover {
   cursor: pointer;
+  background: var(--bg-secondary);
 }

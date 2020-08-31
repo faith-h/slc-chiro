@@ -4,9 +4,9 @@ const About = () => (
   <>
     <div class='container' style={{ minHeight: '100vh' }}>
       <p class='page-header'>About Us</p>
-      <hr class='underline' /> <br /> <p />
+      <hr class='underline' style={{ width: '10rem'}} /> <br />
 
-      <div class='column-text' style={{ height: '16rem' }}>
+      <div class='column-text' >
         <p class='header'> We are easy to find in Draper, Utah </p>
         <p class='text-block'> Located on State Street at 11762 South State in Draper, Utah. We are upstairs in Suite #320. We look forward to your visit to our office! </p>
       </div>
@@ -22,8 +22,8 @@ const About = () => (
         He is a member of the Utah Chiropractic Physicians Association, Sandy Chamber of Commerce and Draper Chamber of Commerce. Along with his extensive education and experience, Dr. Vance understands the importance of having an active lifestyle.
         In his free time, he enjoys spending time with his family and friends, playing tennis, hiking and camping.
       </p>
-    </div>
     {/* <img class='img' src='http://canyoncrestmedical.com/wp-content/uploads/2013/09/IMG_83511.jpg' alt='Office location' /> */}
+    </div>
   </>
 )
 

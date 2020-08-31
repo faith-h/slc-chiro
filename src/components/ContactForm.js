@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-// need to style form
-
 const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICEID
 const USER_ID = process.env.REACT_APP_EMAILJS_USERID
 const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATEID
@@ -24,22 +22,24 @@ export default function CommentForm() {
     e.preventDefault()
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
       .then((result) => {
-          console.log(result)
+        console.log(result)
+        // set sent div to visible
       }, (error) => {
-          console.log(error.text)
+        console.log(error.text)
       })
   }
 
   const { name, email, message } = formData
   return (
     <form className="contact-form" onSubmit={sendEmail}>
-      <label>Name</label>
+      <p class='header'>Name</p>
       <input value={name} type="text" name="name" onChange={e => updateFormData(e)} />
-      <label>Email</label>
+      <p class='header'>Email</p>
       <input value={email} type="email" name="email" onChange={e => updateFormData(e)} />
-      <label>Message</label>
+      <p class='header'>Message</p>
       <textarea value={message} type="text" name="message" onChange={e => updateFormData(e)} />
-      <input type="submit" value="Send" />
+      <br />
+      <input class='submit' type="submit" value="Send" />
     </form>
   )
 }

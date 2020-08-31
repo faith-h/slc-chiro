@@ -2,7 +2,9 @@ import React from 'react'
 
 const NoMatch = () => (
   <>
-    <h1> Page not found. Return <a href='/'> home? </a> </h1>
+    <div class='container' style={{ textAlign: 'center', minHeight: '100vh' }}>
+      <p class='header' style={{ fontSize: '2rem', paddingTop: '2rem', textTransform: 'none' }}> Sorry! That page couldn't be found. Return <a href='/' class='con-link'> home? </a> </p>
+    </div>
   </>
 )
 
