@@ -6,14 +6,14 @@ const Home = () => (
   <>
     <div class='home-bg' />
     
-    <div class='title'>
+    {/* <div class='title'>
       <Animated animationIn='fadeInDown' animationInDelay={300} isVisibile={true}>
         Salt City Chiropractic
       </Animated>
       <Animated animationIn='fadeInUp' animationInDelay={300} isVisible={true}>
         <p class='subtitle'> Comprehensive approach to chiropractic care </p>
       </Animated>
-    </div>
+    </div> */}
 
     <div class='container' style={{ textAlign: 'center', padding: '2rem' }}>
       <p class='home-header' style={{ fontSize: '2rem', margin: '0.5rem' }}> Draper Chiropractor </p>
