@@ -4,7 +4,7 @@ import { Animated } from 'react-animated-css'
 
 const Home = () => (
   <>
-    <div class='home-bg' style={{ background: 'url(' + 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90' + ') no-repeat center fixed' }} />
+    <div class='home-bg' style={{ background: 'url(' + 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90' + ') no-repeat center' }} />
     
     <div class='title'>
       <Animated animationIn='fadeInDown' animationInDelay={300} isVisibile={true}>

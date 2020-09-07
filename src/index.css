@@ -112,7 +112,8 @@ code {
 
 .home-bg {
   min-width: 100vw;
-  background-position: cover !important;
+  background-attachment: fixed;
+  background-size: cover cover;
   height: 43.5rem;
 }
 
