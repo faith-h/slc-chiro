@@ -111,7 +111,6 @@ code {
 /* Home styling */
 
 .home-bg {
-  /* background: url('http://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90') no-repeat center; */
   min-width: 100vw;
   background-attachment: fixed;
   background-size: cover cover;
@@ -210,13 +209,13 @@ code {
     justify-content: center;
   }
   .title {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     /* top: 50%; */
     left: 40%;
   }
-  .sub-title {
+  /* .sub-title {
     font-size: 1.5rem;
-  }
+  } */
 }
 
 /* Shared styling */
