@@ -4,16 +4,16 @@ import { Animated } from 'react-animated-css'
 
 const Home = () => (
   <>
-    <div class='home-bg' />
+    <div class='home-bg' style={{ background: 'url(' + 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=90' + ') no-repeat center fixed' }} />
     
-    {/* <div class='title'>
+    <div class='title'>
       <Animated animationIn='fadeInDown' animationInDelay={300} isVisibile={true}>
         Salt City Chiropractic
       </Animated>
       <Animated animationIn='fadeInUp' animationInDelay={300} isVisible={true}>
         <p class='subtitle'> Comprehensive approach to chiropractic care </p>
       </Animated>
-    </div> */}
+    </div>
 
     <div class='container' style={{ textAlign: 'center', padding: '2rem' }}>
       <p class='home-header' style={{ fontSize: '2rem', margin: '0.5rem' }}> Draper Chiropractor </p>
