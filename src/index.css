@@ -112,7 +112,7 @@ code {
 
 .home-bg {
   min-width: 100vw;
-  background-position: cover;
+  background-position: cover !important;
   height: 43.5rem;
 }
 
@@ -208,7 +208,12 @@ code {
     justify-content: center;
   }
   .title {
+    font-size: 2rem;
+    top: 70%;
     left: 40%;
+  }
+  .sub-title {
+    font-size: 1.5rem;
   }
 }
 
