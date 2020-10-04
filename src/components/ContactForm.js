@@ -29,6 +29,7 @@ export default function CommentForm() {
       })
   }
 
+  // change to labels to be more accessible and add margin
   const { name, email, message } = formData
   return (
     <form className="contact-form" onSubmit={sendEmail}>

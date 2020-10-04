@@ -1,18 +1,18 @@
 import React from 'react'
+import { Animated } from 'react-animated-css'
+import Map from './MapContainer'
 
 const About = () => (
   <>
-    <div class='container' style={{ minHeight: '100vh' }}>
-      <p class='page-header'>About Us</p>
-      <hr class='underline' style={{ width: '10rem'}} /> <br />
+  <div class='photo-header'>
+    <Animated animationIn='fadeInDown' isVisibile={true}> About Us </Animated>
+  </div>
 
-      <div class='column-text' >
-        <p class='header'> We are easy to find in Draper, Utah </p>
-        <p class='text-block'> Located on State Street at 11762 South State in Draper, Utah. We are upstairs in Suite #320. We look forward to your visit to our office! </p>
-      </div>
+    <div class='section' style={{ minHeight: '100vh' }}>
+      <div class='section-content'>
 
-      <p class='header'> Meet Dr. Jason Vance </p>
-      <p class='text-block'>
+      <p class='home-header'> Meet Dr. Jason Vance </p>
+      <p class='text-block' >
         Dr. Jason Vance Graduated cum laude from Palmer College in 2013 with a Doctor of Chiropractic degree.
         His undergraduate was completed at University of Utah in 2009 with a Bachelor of Science in Exercise and Sport Science and a minor in Nutrition.
         While at Palmer College, Dr. Vance also completed an internship in the Rehabilitation and Sports Injury Department.
@@ -22,8 +22,41 @@ const About = () => (
         He is a member of the Utah Chiropractic Physicians Association, Sandy Chamber of Commerce and Draper Chamber of Commerce. Along with his extensive education and experience, Dr. Vance understands the importance of having an active lifestyle.
         In his free time, he enjoys spending time with his family and friends, playing tennis, hiking and camping.
       </p>
-    {/* <img class='img' src='http://canyoncrestmedical.com/wp-content/uploads/2013/09/IMG_83511.jpg' alt='Office location' /> */}
+
+      <div class='row'>
+        <div class='column'>
+        <p class='home-header'> We are easy to find in Draper, Utah </p>
+      
+      <p class='text-block'>
+      Located on State Street at 11762 South State in Draper, Utah. We are upstairs in Suite #320. We look forward to your visit to our office!
+      </p>
+        </div>
+        <div class='column'>
+        {/* <p class='home-header'> The office </p> */}
+        <div class='photo-grid'>
+
+          <div class='grid-photo' id='img-tall' style={{ background: 'url(' + 'http://canyoncrestmedical.com/wp-content/uploads/2013/09/IMG_83511.jpg' + ') no-repeat center' }} />
+          {/* <div class='grid-photo' style={{ background: 'url(' + 'http://canyoncrestmedical.com/wp-content/uploads/2013/09/clarity-website-photo3.jpg' + ') no-repeat center' }} /> */}
+          <div class='grid-photo' style={{ background: 'url(' + 'https://res.cloudinary.com/dddst4ppd/image/upload/v1601838084/clarity-website-photo_2_xwzyfn.jpg' + ') no-repeat center' }} />
+          <div class='grid-photo' style={{ background: 'url(' + 'https://res.cloudinary.com/dddst4ppd/image/upload/v1601838095/clarity-website-photo21_2_czfesj.jpg' + ') no-repeat center' }} />
+
+    {/* <img class='img' id='img-tall' src='http://canyoncrestmedical.com/wp-content/uploads/2013/09/IMG_83511.jpg' alt='Office location' /> */}
+    {/* <img class='img' src='http://canyoncrestmedical.com/wp-content/uploads/2013/09/clarity-website-photo3.jpg' alt='Office location' /> */}
+    {/* <img class='img' src='http://canyoncrestmedical.com/wp-content/uploads/2013/09/clarity-website-photo21.jpg' alt='Office location' /> */}
+    {/* <img class='img' src='http://canyoncrestmedical.com/wp-content/uploads/2013/09/clarity-website-photo.jpg' alt='Office location' /> */}
     </div>
+        </div>
+      </div>
+   
+          
+      
+      
+      </div>
+      </div>
+
+  
+
+    {/* </div> */}
   </>
 )
 

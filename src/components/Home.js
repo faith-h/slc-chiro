@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Animated } from 'react-animated-css'
 
 const Home = () => (
@@ -29,7 +28,7 @@ const Home = () => (
         style={{ backgroundImage: "url(" + "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80" + ")" }}
       >
         <div class='overlay'>
-          <Link class='link-text' to='/about'> About </Link>
+          <a class='link-text' href='/about'> About </a>
         </div>
       </div>
 
@@ -38,9 +37,7 @@ const Home = () => (
         style={{ backgroundImage: "url(" + "https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" + ")" }}
       >
         <div class='overlay'>
-          <Link class='link-text' to='/services'>
-            Services
-          </Link>
+          <a class='link-text' to='/services'> Services </a>
         </div>
 
       </div>
@@ -49,9 +46,7 @@ const Home = () => (
         style={{ backgroundImage: "url(" + "https://images.unsplash.com/photo-1552196527-bffef41ef674?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80" + ")" }}
       >
         <div class='overlay'>
-          <Link class='link-text' to='/contact'>
-            Contact
-          </Link>
+          <a class='link-text' to='/contact'> Contact </a>
         </div>
       </div>
       
@@ -66,7 +61,8 @@ const Home = () => (
           Every person is unique and that is why we take our time during appointments. While many chiropractors simply adjust their clients and send them on your way, at Salt City Chiropractic Wellness Center we offer a more comprehensive and holistic form of care.
           Our approach includes focusing on exercise and nutrition so that your total health is addressed as a whole.
         </p>
-      <Link class='button' to='/services' style={{ textDecoration: 'none' }}> See our services </Link>
+
+      <a class='button' href='/services' style={{ textDecoration: 'none' }}> See our services </a>
 
       <p class='home-header' style={{ marginTop: '4rem' }}> Free Initial Exam and Consultation Available </p>
         <p class='text-block' style={{ marginBottom: '3rem' }}>
@@ -74,7 +70,7 @@ const Home = () => (
           At our office, you will be greeted by our friendly staff and we offer a welcoming environment where you will immediately feel at ease.
           To visit Salt City Chiropractic Wellness Center, contact our office at 801-312-9991 and schedule your free exam and consultation!
         </p>
-      <Link class='button' to='/contact' style={{ textDecoration: 'none' }}> Contact us </Link>
+      <a class='button' href='/contact' style={{ textDecoration: 'none' }}> Contact us </a>
     </div>
   </>
 )

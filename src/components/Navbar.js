@@ -1,31 +1,36 @@
 import React from 'react'
 import logo from './images/chiro-logo.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 class Navbar extends React.Component {
 
   openBurger() {
-    var x = document.getElementById('nav')
-    if (x.className === 'nav') {
-      x.className += 'responsive'
-    } else {
-      x.className = 'nav'
-    }
+    const burger = document.querySelector('.burger')
+    const navLinks = document.querySelector('.nav-links')
+    const links = document.querySelectorAll('.nav-links li')
+    console.log(links)
+    navLinks.classList.toggle('open')
+    links.forEach(l => {
+      l.classList.toggle('fade')
+    })
+    burger.classList.toggle('toggle')
   }
 
   render() {
     return (
       <>
-        <nav class='nav' id='nav'>
-          <a className='nav-link' href='/about'> About </a>
-          <a className='nav-link' href='/services'> Services </a>
-          <a className='nav-link' href='/contact'> Contact </a>
-          <span class='nav-block'> 801-312-9991 </span>
-          <FontAwesomeIcon icon={faBars} class='icon' onClick={() => this.openBurger()} />
-          <a href='/' >
-            <img alt='logo' class='logo' src={logo} />
-          </a>
+        <nav>
+          <a href='/'> <img src={logo} class='logo' alt='Logo Image' /> </a>
+          <div class='burger' onClick={() => this.openBurger()}>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+          </div>
+          <ul class='nav-links' style={{ listStyle: 'none' }}>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/services'>Services</a></li>
+            <li><a href='/contact'>Contact</a></li>
+            <li><span class='nav-block'>801-312-9991</span></li>
+          </ul>
         </nav>
       </>
     )
