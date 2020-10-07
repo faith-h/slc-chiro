@@ -85,6 +85,9 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
+  .logo {
+    left: 2rem;
+  }
   .burger {
     display: block;
     position: absolute;
@@ -314,6 +317,12 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
+  .photo-header {
+    text-align: center;
+  }
+  .section-content {
+    padding: 0.5rem 2rem 1rem 2rem;
+  }
   .column {
     width: 100%;
   }
