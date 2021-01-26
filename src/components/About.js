@@ -27,10 +27,3 @@ const About = () => (
 )
 
 export default About
-
-// {/* <div class='photo-grid'>
-//   <div class='grid-photo' id='img-tall' style={{ background: 'url(' + 'http://canyoncrestmedical.com/wp-content/uploads/2013/09/IMG_83511.jpg' + ') no-repeat center' }} />
-//   <div class='grid-photo' style={{ background: 'url(' + 'http://canyoncrestmedical.com/wp-content/uploads/2013/09/clarity-website-photo3.jpg' + ') no-repeat center' }} />
-//   <div class='grid-photo' style={{ background: 'url(' + 'https://res.cloudinary.com/dddst4ppd/image/upload/v1601838084/clarity-website-photo_2_xwzyfn.jpg' + ') no-repeat center' }} />
-//   <div class='grid-photo' style={{ background: 'url(' + 'https://res.cloudinary.com/dddst4ppd/image/upload/v1601838095/clarity-website-photo21_2_czfesj.jpg' + ') no-repeat center' }} />
-// </div> */}

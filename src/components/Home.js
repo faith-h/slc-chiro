@@ -13,11 +13,11 @@ const Home = () => (
 
     <div class='section' style={{ textAlign: 'center' }}>
       <div class='section-content' id='home-helper' style={{ paddingTop: '2rem' }}>
-      <p class='home-header' style={{ fontSize: '2rem', margin: '0.5rem' }}> Draper Chiropractor </p>
-      <p class='text-block'> It may be the result of an injury or the everyday wear and tear of being active, but when your spine is out of alignment it can have a significant impact on your overall health.
-        At Salt City Chiropractic Wellness Center, Dr. Vance takes his time with patients, focusing on alignments, restoring proper muscle balance and tailoring his service to your specific needs. To schedule your initial appointment, call our office at 801-312-9991.
+        <p class='home-header' style={{ fontSize: '2rem', margin: '0.5rem' }}> Draper Chiropractor </p>
+        <p class='text-block'> It may be the result of an injury or the everyday wear and tear of being active, but when your spine is out of alignment it can have a significant impact on your overall health.
+          At Salt City Chiropractic Wellness Center, Dr. Vance takes his time with patients, focusing on alignments, restoring proper muscle balance and tailoring his service to your specific needs. To schedule your initial appointment, call our office at 801-312-9991.
       </p>
-    </div>
+      </div>
     </div>
 
     <div class='grid'>

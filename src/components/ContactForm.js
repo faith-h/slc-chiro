@@ -51,7 +51,7 @@ export default function CommentForm() {
             <span> Thanks! We'll get back to you as soon as possible. </span>
           </Animated>
         </div>
-      : null}
+        : null}
     </>
   )
 }
