@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/slc-chiro/precache-manifest.d4ef34c73f3c3134b42d4eae43d75bb4.js"
+  "/slc-chiro/precache-manifest.3460a8ef75bd128751c57a202dfe7d62.js"
 );
 
 self.addEventListener('message', (event) => {
