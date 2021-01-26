@@ -26,9 +26,9 @@ class Navbar extends React.Component {
             <div class='line3'></div>
           </div>
           <ul class='nav-links' style={{ listStyle: 'none' }}>
-            <li><a href='/about'>About</a></li>
-            <li><a href='/services'>Services</a></li>
-            <li><a href='/contact'>Contact</a></li>
+            <li><a href='/#/about'>About</a></li>
+            <li><a href='/#/services'>Services</a></li>
+            <li><a href='/#/contact'>Contact</a></li>
             <li><span class='nav-block'>801-312-9991</span></li>
           </ul>
         </nav>

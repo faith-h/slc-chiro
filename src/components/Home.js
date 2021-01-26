@@ -26,7 +26,7 @@ const Home = () => (
         style={{ backgroundImage: "url(" + "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80" + ")" }}
       >
         <div class='overlay'>
-          <a class='link-text' href='/about'> About </a>
+          <a class='link-text' href='/#/about'> About </a>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const Home = () => (
           Our approach includes focusing on exercise and nutrition so that your total health is addressed as a whole.
         </p>
 
-        <a class='button' href='/services' style={{ textDecoration: 'none' }}> See our services </a>
+        <a class='button' href='/#/services' style={{ textDecoration: 'none' }}> See our services </a>
 
         <p class='home-header' style={{ marginTop: '4rem' }}> Free Initial Exam and Consultation Available </p>
         <p class='text-block' style={{ marginBottom: '3rem' }}>
@@ -69,7 +69,7 @@ const Home = () => (
           At our office, you will be greeted by our friendly staff and we offer a welcoming environment where you will immediately feel at ease.
           To visit Salt City Chiropractic Wellness Center, contact our office at 801-312-9991 and schedule your free exam and consultation!
         </p>
-        <a class='button' href='/contact' style={{ textDecoration: 'none' }}> Contact us </a>
+        <a class='button' href='/#/contact' style={{ textDecoration: 'none' }}> Contact us </a>
       </div>
     </div>
   </>
