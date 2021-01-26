@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/slc-chiro/static/css/main.90515ec8.chunk.css",
+    "main.js": "/slc-chiro/static/js/main.7d3f96fc.chunk.js",
+    "main.js.map": "/slc-chiro/static/js/main.7d3f96fc.chunk.js.map",
+    "runtime-main.js": "/slc-chiro/static/js/runtime-main.b41fcbde.js",
+    "runtime-main.js.map": "/slc-chiro/static/js/runtime-main.b41fcbde.js.map",
+    "static/js/2.48a24a27.chunk.js": "/slc-chiro/static/js/2.48a24a27.chunk.js",
+    "static/js/2.48a24a27.chunk.js.map": "/slc-chiro/static/js/2.48a24a27.chunk.js.map",
+    "index.html": "/slc-chiro/index.html",
+    "precache-manifest.d4ef34c73f3c3134b42d4eae43d75bb4.js": "/slc-chiro/precache-manifest.d4ef34c73f3c3134b42d4eae43d75bb4.js",
+    "service-worker.js": "/slc-chiro/service-worker.js",
+    "static/css/main.90515ec8.chunk.css.map": "/slc-chiro/static/css/main.90515ec8.chunk.css.map",
+    "static/js/2.48a24a27.chunk.js.LICENSE.txt": "/slc-chiro/static/js/2.48a24a27.chunk.js.LICENSE.txt",
+    "static/media/chiro-logo.jpg": "/slc-chiro/static/media/chiro-logo.abe47a58.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b41fcbde.js",
+    "static/js/2.48a24a27.chunk.js",
+    "static/css/main.90515ec8.chunk.css",
+    "static/js/main.7d3f96fc.chunk.js"
+  ]
+}
